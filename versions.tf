@@ -7,5 +7,6 @@ terraform {
   }
 }
 
-provider "cloudflare" { 
+provider "cloudflare" {
+    // API Token stored as ENV Variable CLOUDFLARE_API_TOKEN
 }

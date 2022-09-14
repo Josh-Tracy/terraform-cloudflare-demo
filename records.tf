@@ -3,6 +3,5 @@ resource "cloudflare_record" "terraform" {
   name    = "terraform"
   value   = "192.168.0.11"
   type    = "A"
-  proxied = true
-  ttl     = 3600
+  proxied = false
 }
