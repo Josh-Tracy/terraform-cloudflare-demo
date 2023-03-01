@@ -1,7 +1,7 @@
 resource "cloudflare_record" "terraform" {
   zone_id = var.cloudflare_zone_id
-  name    = "terraform"
-  value   = "192.168.0.12"
+  name    = var.name
+  value   = var.ip
   type    = "A"
   proxied = false
 }
